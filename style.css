@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+
+    background-image: url(home.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+
+}
+
+.space{
+    background-color: #006837;
+    position: relative;
+    z-index: 3;
+ 
+
+}
+.headernav{
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    position: sticky;
+
+}
+.headernav ul{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+}
+.headernav ul li{
+    display: inline-flex;
+    padding: 30px;
+}
+.headernav ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    font-style: bold;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+.headernav ul li a:hover{
+     color: #006837;
+
+}
+.logo{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding-right: 800px;
+
+}
+.Logo{
+    padding: 0px;
+}
+h1{
+    padding: 50px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 70px;  
+    text-align: right;
+    position: relative;
+    z-index: 3;
+
+}
+span{
+    font-size: 90px;
+
+}
+.overview{
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 50px;
+}
+.restimage{
+    width: 200px;
+    height: 200px;
+    grid-area: restimage;
+    padding-top: 0px;
+    padding-left: 150px;
+}
+h2{
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.p1{
+
+    font-family: 'Futura SH';
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    gap: 10;
+    padding-left: 100px;
+}
+.overgrid{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 10px;
+    grid-template-rows: 2fr;
+    grid-template-areas: "p1 restimage"
+}
+.latestnews{
+    background-color: #009900;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60vh;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.Reviews{
+    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 55px;
+
+}
+.p2{
+    background-color: #ffffff;
+    width: 230px;
+    height: 230px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.Events{
+    background-color: rgb(213, 214, 188);
+}
+.Location{
+    background-color: #014421;
+}
+.image{
+    width: 400px;
+    height: 50vh;
+    padding: 40px;
+}
+.p3{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 70px;
+    padding-top: 2px;
+    padding-right: 300px;
+}
+.location{
+    display: inline-flex;
+    padding: 120px;
+}
+.location ul li{
+    list-style: none;
+}
+.Footer{
+    background-color: black;
+}
+.footernav ul li{
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    padding: 70px;
+}
+.footernav ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    font-style: bold;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding-right: 40px;
+    padding: 60px;
+}
+.footernav ul li a:hover{
+    color: #006837;
+}
+.footernav2 ul li{
+    list-style: none;
+    color: #ffffff;
+    display: inline-flex;
+    padding-left: 50px;
+}
+.footernav2 ul li a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    font-style: bold;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 10x;
+    font-style: italic;
+    text-align: center;
+    padding-left: 40px;
+    padding: 60px;
+
+}
+.footernav2 ul li a:hover{
+    color: #006837;
+}
+.p4{
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+.container2{
+    background-image: url(MENU.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.container2::before{
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+
+    position: absolute;
+
+}
