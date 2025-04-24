@@ -34,11 +34,11 @@
 
 }
 .container4{
-    background-image: url(employees.png);
+    background-image: url(sisi.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: 85vh;
 }
 .space{
     background-color: #006837;
@@ -63,6 +63,7 @@
 .headernav ul li{
     display: inline-flex;
     padding: 30px;
+    padding-left: 80px;
 }
 .headernav ul li a{
     text-decoration: none;
@@ -73,16 +74,14 @@
     color: black;
     font-size: 20px;
     font-style: italic;
+    padding: 20px;
 }
 .headernav ul li a:hover{
      color: #006837;
 
 }
 .logo{
-    display: flex;
-    width: 150px;
-    height: 150px;
-    padding-right: 800px;
+    pa
 
 }
 .Logo{
@@ -187,56 +186,49 @@ h2{
 .location{
     display: inline-flex;
     padding: 120px;
-    color: ;
 }
 .location ul li{
     list-style: none;
 }
 .Footer{
     background-color: black;
+    width: 100%;
+}
+.footernav{
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px;
+    padding-top: 40px;
+    
+}
+.footernav ul{
+    text-align: center;
+    width: 100%;
+    padding-left: 450px;
 }
 .footernav ul li{
     list-style: none;
     color: white;
     display: inline-flex;
-    padding: 70px;
+
 }
+    
 .footernav ul li a{
     text-decoration: none;
     font-family: 'Franklin Gothic Medium';
     font-style: bold;
-    display: flex;
-    justify-content: space-between;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-style: italic;
     text-align: center;
-    padding-right: 40px;
-}
-.footernav ul li a:hover{
-    color: #006837;
-}
-.footernav2 ul li{
-    list-style: none;
-    color: #ffffff;
-    display: inline-flex;
-    padding-left: 50px;
-}
-.footernav2 ul li a{
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium';
-    font-style: bold;
     display: flex;
     justify-content: space-between;
-    color: white;
-    font-size: 10x;
-    font-style: italic;
-    text-align: center;
-    padding-left: 40px;
-    padding: 60px;
+    padding: 30px;
 
 }
-.footernav2 ul li a:hover{
+
+.footernav ul li a:hover{
     color: #006837;
 }
 .p4{
@@ -262,7 +254,6 @@ h2{
     width: 100%;
     height: 100vh;
     z-index: 1;
-
     position: absolute;
 
 }
@@ -417,4 +408,28 @@ form{
 form input{
     width: 60px 80px;
     height: 20px;
+}
+
+
+
+.History{
+    background-color: #006837;
+}
+.past>img{
+    width: 30%;
+    height: 40%;
+    align-content: center;
+    padding-left: 500px;
+}
+.past{
+    box-sizing: border-box;
+    width: 1500px;
+    height: auto;
+}
+.histext{
+    padding: 30px;
+    font-family: 'Franklin Gothic Mediium';
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
 }
