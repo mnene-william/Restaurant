@@ -513,7 +513,35 @@ input[type="submit"] {
     text-align: center;
     padding: 10px;
 }
-
+@media only screen and (min-width: 1201px) {
+    .headernav ul li {
+        padding-left: 100px;
+    }
+    .restimage {
+        padding-left: 200px;
+    }
+    .p1 {
+        padding-left: 150px;
+    }
+    .founders {
+        padding-left: 500px;
+    }
+    .card {
+        width: 350px;
+        height: 450px;
+    }
+    .card>img {
+        width: 350px;
+        height: 350px;
+    }
+    .social-icons {
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+    .fab {
+        padding: 30px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .headernav ul li {
         padding-left: 40px;
