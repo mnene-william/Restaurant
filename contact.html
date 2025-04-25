@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Meddon&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -15,8 +18,10 @@
             <br />
           </div>
           <nav class="headernav">
+            <h1 class="eagle-lake-regular">Willy's Wings</h1>
            
             <ul>
+            
               <li><a href="index.html">Home</a></li>
               <li><a href="menu.html">Menu</a></li>
               <li><a href="about.html">About</a></li>
@@ -28,20 +33,25 @@
 
         <section class="contact">
             <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p>If you have any questions or feedback, feel free to reach out to us!</p>
-                <p>Email: wingstopinc@gmail.com  
-                </p>
-                <p>Phone: +1 234 567 890</p>
-                <p>Address: 123 Wing Street, Flavor Town, USA</p>
-            </div>
+            
             <div class="socialmedia">
                 <div class ="accounts">
                    <h3>Follow us on social media</h3>
+                   <br>
+                    <p>Stay updated with our latest news and promotions!</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/wingstop" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Wingstop" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wingstop/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wingstop" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="form">
                 <h3>Contact Form</h3>
+                <br>
                 <p>For inquiries, please fill out the form below:</p>
+                <br>
                 <form action="submit_form.php" method="post">
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" required><br>
@@ -49,7 +59,8 @@
                     <input type="email" id="email" name="email" required><br>
                     <label for="message">Message:</label><br>
                     <textarea id="message" name="message" rows="4" required></textarea><br>
-                    <input type="submit" value="Submit">
+                    <br>
+                    <button class="button1"><input type="submit" value="Submit"></button>
                 </form>
                 </div>
             </div>
@@ -79,7 +90,7 @@
           </div>
           <div class="copyright">
             <p class="p4">&copy;
-              Wingstop Restaurants Inc 2025
+              Willy's Wings Restaurants Inc 2025
     
             </p>
     

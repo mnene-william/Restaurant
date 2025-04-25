@@ -11,11 +11,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 95vh;
+    height: 120vh;
 
 }
 .container3{
-    background-image: url(contactus.png);
+    background-image: url(our.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -27,7 +27,7 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 115vh;
+    height: 133vh;
     z-index: 1;
     position: absolute;
     background-color: rgba(0,0,0,0.2);
@@ -44,8 +44,6 @@
     background-color: #006837;
     position: relative;
     z-index: 3;
- 
-
 }
 .headernav{
     background-color: #ffffff;
@@ -80,25 +78,19 @@
      color: #006837;
 
 }
-.logo{
-    pa
 
-}
-.Logo{
-    padding: 0px;
-}
-h1{
-    padding: 50px;
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium';
-    font-style: italic;
-    font-weight: bold;
-    font-size: 70px;  
-    text-align: right;
-    position: relative;
-    z-index: 3;
+.eagle-lake-regular{
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    color: #006837;
+  }
+  
 
-}
+
 span{
     font-size: 90px;
 
@@ -158,12 +150,13 @@ h2{
 }
 .p2{
     background-color: #ffffff;
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
     font-style: italic;
     font-size: 20px;
     font-weight: bolder;
     line-height: 20px;
+    padding: 4px;
 }
 .Events{
     background-color: rgb(213, 214, 188);
@@ -186,9 +179,11 @@ h2{
 .location{
     display: inline-flex;
     padding: 120px;
+
 }
 .location ul li{
     list-style: none;
+    color: white;
 }
 .Footer{
     background-color: black;
@@ -355,12 +350,13 @@ button{
     font-family: 'Franklin Gothic Medium';
     font-style: italic;
     padding: 30px;
+    color: white;
 }
 .contact-info p{
     padding: 20px;
 }
 .socialmedia{
-    background-color: black;
+    background-color: #006837;
     text-align: center;
     font-family: 'Franklin Gothic Medium';
     font-style: italic;
@@ -368,6 +364,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
 }
 .socialmedia ul li{
     list-style: none;
@@ -382,6 +379,7 @@ button{
 }
 .accounts{
     align-items: flex-start;
+    color: #ffffff;
 
 
 }
@@ -395,31 +393,90 @@ button{
     list-style: none;
     padding: 30px;
 }
-.form{
-    background-color: white;
-    align-items: flex-end;
-    width: 300px;
-}
-form{
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
-    width: 40%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.fab{
+    padding: 40px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    padding-top: 70px;
+}
+.fab:hover{
+    opacity: 0.7;
+}
+.fa-facebook-f{
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram{
+    background: #125688;
+    color: #f56040;
+}
+.fa-twitter{
+    background: #125688;
+    color: white;
+}
+.fa-linkedin-in{
+    background: #125688;
+    color: blue;
+}
+  
+.form{
+
+    background-color: #ffffff;
+    width: 500px;
     height: auto;
+    padding: 30px;
 }
-form input{
-    width: 60px 80px;
-    height: 20px;
+input[type="text"],
+input[type="email"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background-color: #f1f1f1;
 }
-
-
-
+input[type="submit"] {
+    background-color: green;
+    border: none;
+}
+.button1{
+    background-color: green;
+}
+.b1{
+    color: #ffffff;
+    padding: 20px;
+    font: 'Franklin Gothic Medium';
+    text-align: center;
+    font-size: 20px;
+}
 .History{
-    background-color: #006837;
+    background-color: green;
 }
-.past>img{
-    width: 30%;
-    height: 40%;
-    align-content: center;
-    padding-left: 500px;
+
+.founders{
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 450px;
+    padding-bottom: 40px;
+}
+.gallery>img{
+    width:400px;
+    height: 300px;
+    padding: 50px;
 }
 .past{
     box-sizing: border-box;
