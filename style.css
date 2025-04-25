@@ -12,6 +12,7 @@
     background-size: cover;
     width: 100%;
     height: 120vh;
+    max-width: 100%;
 
 }
 .container3{
@@ -20,6 +21,7 @@
     background-size: cover;
     width: 100%;
     height: 95vh;
+    max-width: 100%;
 
 }
 .container3::before{
@@ -31,6 +33,7 @@
     z-index: 1;
     position: absolute;
     background-color: rgba(0,0,0,0.2);
+    max-width: 100%;
 
 }
 .container4{
@@ -39,11 +42,13 @@
     background-size: cover;
     width: 100%;
     height: 85vh;
+    max-width: 100%;
 }
 .space{
     background-color: #006837;
     position: relative;
     z-index: 3;
+    max-width: 100%;
 }
 .headernav{
     background-color: #ffffff;
@@ -51,17 +56,20 @@
     position: relative;
     z-index: 2;
     position: sticky;
+    max-width: 100%;
 
 }
 .headernav ul{
     list-style: none;
     text-align: right;
     width: 100%;
+    max-width: 100%;
 }
 .headernav ul li{
     display: inline-flex;
     padding: 30px;
     padding-left: 80px;
+    max-width: 100%;
 }
 .headernav ul li a{
     text-decoration: none;
@@ -73,9 +81,11 @@
     font-size: 20px;
     font-style: italic;
     padding: 20px;
+    max-width: 100%;
 }
 .headernav ul li a:hover{
      color: #006837;
+     max-width: 100%;
 
 }
 
@@ -87,6 +97,7 @@
     font-size: 50px;
     padding-top: 20px;
     color: #006837;
+    max-width: 100%;
   }
   
 
@@ -102,6 +113,7 @@ span{
     box-sizing: border-box;
     padding: 30px;
     padding-top: 50px;
+    max-width: 100%;
 }
 .restimage{
     width: 200px;
@@ -109,6 +121,7 @@ span{
     grid-area: restimage;
     padding-top: 0px;
     padding-left: 150px;
+    max-width: 100%;
 }
 h2{
     text-align: center;
@@ -117,6 +130,7 @@ h2{
     font-style: italic;
     font-size: 30px;
     padding-bottom: 30px;
+    max-width: 100%;
 }
 .p1{
 
@@ -126,6 +140,7 @@ h2{
     text-align: center;
     gap: 10;
     padding-left: 100px;
+    max-width: 100%;
 }
 .overgrid{
     display: grid;
@@ -141,11 +156,13 @@ h2{
     height: 60vh;
     padding-left: 20px;
     padding-top: 20px;
+    max-width: 100%;
 }
 .Reviews{
     display: inline-flex;
     justify-content: space-between;
     padding-right: 55px;
+    max-width: 100%;
 
 }
 .p2{
@@ -157,9 +174,11 @@ h2{
     font-weight: bolder;
     line-height: 20px;
     padding: 4px;
+    max-width: 100%;
 }
 .Events{
     background-color: rgb(213, 214, 188);
+    max-width: 100%;
 }
 .Location{
     background-color: #014421;
@@ -490,3 +509,201 @@ input[type="submit"] {
     text-align: center;
     padding: 10px;
 }
+@media only screen and (max-width: 1366px) {
+    .container, .container2, .container3, .container4 {
+        height: auto;
+    }
+
+    .headernav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .headernav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .overview {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .restimage {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .p1 {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .overgrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "p1"
+            "restimage";
+    }
+
+    .Reviews {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .p2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .location {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .location ul li {
+        text-align: center;
+    }
+
+    .card-container, .card-container2, .card-container3, .card-container4, .card-container5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .socialmedia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .founders {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .gallery > img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .past {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .histext {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .headernav ul li {
+        padding: 5px;
+    }
+
+    .p1, .p2, .histext {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        padding: 5px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gallery > img {
+        padding: 5px;
+    }
+
+    .founders {
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container, .container2, .container3, .container4 {
+        height: auto;
+    }
+
+    .headernav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .headernav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .overview {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+    .restimage {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .p1 {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .overgrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "p1"
+            "restimage";
+    }
+
+    .Reviews {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .p2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .location {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .location ul li {
+        text-align: center;
+    }
+
+
+
+
+
