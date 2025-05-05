@@ -53,11 +53,14 @@
 .headernav{
     background-color: #ffffff;
     padding: 10px;
-    position: relative;
-    z-index: 2;
     position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 100%;
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .headernav ul{
     list-style: none;
@@ -83,11 +86,43 @@
     padding: 20px;
     max-width: 100%;
 }
-.headernav ul li a:hover{
-     color: #006837;
-     max-width: 100%;
-
+.headernav ul li a:hover {
+    color: #006837;
+    max-width: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .headernav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .headernav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .headernav ul li {
+        padding: 10px 0;
+        text-align: left;
+    }
+    .headernav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headernav {
+        padding: 5px;
+    }
+    .headernav ul li {
+        padding: 5px 0;
+    }
+    .headernav ul li a {
+        font-size: 14px;
+    }
+}
+
 
 .eagle-lake-regular{
     font-family: "Eagle Lake", serif;
@@ -132,15 +167,81 @@ h2{
     padding-bottom: 30px;
     max-width: 100%;
 }
-.p1{
-
-    font-family: 'Futura SH', sans-serif;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    gap: 10;
-    padding-left: 100px;
+.headernav {
+    background-color: #ffffff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headernav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.headernav ul li {
+    padding: 0 10px;
+}
+
+.headernav ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium';
+    font-style: bold;
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+.headernav ul li a:hover {
+    color: #006837;
+}
+
+@media only screen and (max-width: 768px) {
+    .headernav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .headernav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .headernav ul li {
+        padding: 5px 0;
+    }
+
+    .headernav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headernav {
+        padding: 5px;
+    }
+
+    .headernav ul li {
+        padding: 5px 0;
+    }
+
+    .headernav ul li a {
+        font-size: 14px;
+    }
 }
 .overgrid{
     display: grid;
@@ -151,6 +252,7 @@ h2{
 }
 .news{
     background-color: #006837;
+
 }
 .latestnews{
     display: flex;
@@ -536,16 +638,21 @@ input[type="submit"] {
         display: flex;
         padding: 0px;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    .headernav ul li{
+        display: inline-block;
+        margin: 0 15px;
     }
-    .HEADERNAV ul li{
-        
-    }
-    }
+        display: flex;
     .logo{
         display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #006837;
+        padding-left: 10px;
+    }
         align-self: flex-start;
+        font-size: 50px;
     }
 
     .eagle-lake-regular{
