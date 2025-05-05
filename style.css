@@ -149,31 +149,35 @@ h2{
     grid-template-rows: 2fr;
     grid-template-areas: "p1 restimage"
 }
+.news{
+    background-color: #006837;
+}
 .latestnews{
-    background-color: #009900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #006837;
     box-sizing: border-box;
     width: 100%;
-    height: 60vh;
-    padding-left: 20px;
     padding-top: 20px;
-    max-width: 100%;
-}
-.Reviews{
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 100%;
-    padding: 40px;
-    padding-top: 2px;
-    align-items: center;
-    padding-left: 60px;
 
 }
+.Reviews{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    background-color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
 .p2{
     background-color: #ffffff;
-    width: 230px;
-    height: 230px;
     font-style: italic;
     font-size: 20px;
     font-weight: bolder;
@@ -183,48 +187,63 @@ h2{
 }
 .Events{
     background-color: rgb(213, 214, 188);
-    max-width: 100%;
+    width: 100%;
+    
+
+}
+.events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+
 }
 .Location{
     background-color: #014421;
 }
 .image{
-    width: 400px;
-    height: 50vh;
-    padding: 40px;
-}
-.p3{
-    display: inline-flex;
-    justify-content: space-between;
-    padding: 70px;
-    padding-top: 2px;
-    padding-right: 300px;
-}
-.location{
-    display: inline-flex;
-    padding: 120px;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
 
 }
+
+.Location{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #006837;
+
+}
+.location{
+    background-color: #006837;
+    margin: 35px;
+    padding: 40px;
+}
+  
 .location ul li{
     list-style: none;
     color: white;
 }
 .Footer{
     background-color: black;
-    width: 100%;
+width: 100%;
 }
 .footernav{
-    display: inline-flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content:center;
     align-items: center;
     padding: 30px;
-    padding-top: 40px;
+    padding-top: 10px;
     
 }
 .footernav ul{
     text-align: center;
     width: 100%;
-    padding-left: 450px;
+   
 }
 .footernav ul li{
     list-style: none;
@@ -243,7 +262,7 @@ h2{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px;
 
 }
 
@@ -286,53 +305,27 @@ h2{
 
 }
 .Menu{
-    display: grid;
-    padding: 0px;
+    width: 100%;
     box-sizing: border-box;
+    background-color: #006837;
 }
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
     background-color: #006837;
-    
-}
-.card-container2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #006837;
-    
-}
-.card-container3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #006837;
-    
-}
-.card-container4{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #006837;
-    
-}
-.card-container5{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #006837;
-    
+
 }
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
     border-radius: 5px;
     width: 300px;
     height: 400px; 
-    margin: 20px;
+    margin: 15px;
     background-color: #ffffff;
     float: left;
     
@@ -341,14 +334,15 @@ h2{
 .card>img{
     width: 300px;
     height: 300px;
+    
 
 }
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 .cardcon{
-    padding: 2px 16px;
     text-align: center;
+    width: 100%;
 
 }
 button{
@@ -513,128 +507,126 @@ input[type="submit"] {
     text-align: center;
     padding: 10px;
 }
-@media only screen and (min-width: 1201px) {
-    .headernav ul li {
-        padding-left: 100px;
-    }
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
     .restimage {
-        padding-left: 200px;
+        padding-left: 50px;
+        width: 150px;
+        height: 150px;
     }
     .p1 {
-        padding-left: 150px;
-    }
-    .founders {
-        padding-left: 500px;
+        padding-left: 50px;
+        font-size: 18px;
     }
     .card {
-        width: 350px;
-        height: 450px;
-    }
-    .card>img {
-        width: 350px;
+        width: 250px;
         height: 350px;
     }
-    .social-icons {
-        justify-content: space-evenly;
-        padding: 50px;
+    .card>img {
+        width: 250px;
+        height: 250px;
     }
-    .fab {
-        padding: 30px;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .headernav ul li {
-        padding-left: 40px;
-    }
-    .restimage {
-        padding-left: 50px;
-    }
-    .p1 {
-        padding-left: 50px;
-    }
-    .founders {
-        padding-left: 200px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .headernav ul {
-        text-align: center;
-    }
-    .headernav ul li {
-        padding-left: 20px;
-    }
-    .overgrid {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "p1"
-            "restimage";
-    }
-    .restimage {
-        padding-left: 0;
-        margin: auto;
-    }
-    .p1 {
-        padding-left: 0;
-    }
-    .founders {
-        padding-left: 100px;
+    .form {
+        width: 400px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .headernav ul li {
-        padding: 15px;
+    .headernav{
+        display: flex;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .HEADERNAV ul li{
+        
+    }
+    }
+    .logo{
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .eagle-lake-regular{
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: right;
+        font-size: 20px;
+        color: #006837;
+        max-width: 100%;
+      }
+
+    .restimage {
+        padding-left: 20px;
+        width: 120px;
+        height: 120px;
+    }
+    .p1 {
+        padding-left: 20px;
+        font-size: 16px;
     }
     .card {
-        width: 250px;
-        height: 350px;
+        width: 200px;
+        height: 300px;
     }
     .card>img {
-        width: 250px;
+        width: 200px;
+        height: 200px;
+    }
+    .form {
+        width: 300px;
+    }
+    .gallery>img {
+        width: 300px;
+        height: 200px;
+    }
+
+
+@media only screen and (max-width: 480px) {
+    .headernav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .headernav ul {
+        text-align: center;
+    }
+    .headernav ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .headernav ul li a{
+        font-size: 10px;
+    }
+    .restimage {
+        padding-left: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .p1 {
+        padding-left: 0;
+        font-size: 14px;
+    }
+    .card {
+        width: 150px;
         height: 250px;
+    }
+    .card>img {
+        width: 150px;
+        height: 150px;
+    }
+    .form {
+        width: 250px;
+    }
+    .gallery>img {
+        width: 250px;
+        height: 150px;
     }
     .social-icons {
         flex-direction: column;
-        align-items: center;
+        padding-left: 0;
     }
-    .fab {
-        padding: 20px;
-    }
-    .founders {
-        padding-left: 50px;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    .headernav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .headernav ul li {
-        padding: 15px;
-    }
-    .p1, .restimage {
-        text-align: left;
-        padding: 20px;
-    }
-    .card {
-        width: 250px;
-        height: 350px;
-    }
-    .card>img {
-        width: 250px;
-        height: 250px;
-    }
-    .social-icons {
-        padding: 20px;
-        flex-direction: row;
-    }
-    .fab {
-        padding: 15px;
-    }
-    .founders {
-        flex-direction: row;
-        padding-left: 50px;
-    }
-}
